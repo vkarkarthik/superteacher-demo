@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Computer Science Boards | SuperTeacher</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body data-root="../" data-active="curriculum">
+    <header id="site-header"></header>
+
+    <main class="page">
+      <div class="page-top">
+        <span> Curriculum / Computer Science </span>
+
+        <a class="back-link" href="../curriculum.html"> Back to curriculum </a>
+      </div>
+
+      <section class="page-heading computer-board-heading">
+        <div>
+          <div class="breadcrumb">Overview / Curriculum / Computer Science</div>
+
+          <h1>Computer Science Curriculum</h1>
+        </div>
+
+        <p>
+          Choose your education board to explore the available Computer Science
+          series and grade-wise books.
+        </p>
+      </section>
+
+      <section id="board-stage" class="board-stage">
+        <div class="board-orbit-area">
+          <div class="board-orbit-track"></div>
+
+          <button
+            id="board-core"
+            class="board-core"
+            type="button"
+            aria-expanded="false"
+            aria-controls="board-ring"
+          >
+            <div id="board-core-icon" class="board-core-icon"></div>
+
+            <strong> Computer Science </strong>
+
+            <span> Board-wise Curriculum </span>
+
+            <small id="board-core-action"> Click to choose a board </small>
+          </button>
+
+          <div id="board-ring" class="board-ring"></div>
+        </div>
+
+        <div class="board-stage-instruction">
+          Select a board to view its curriculum series
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/board-selector.js"></script>
+  </body>
+</html>

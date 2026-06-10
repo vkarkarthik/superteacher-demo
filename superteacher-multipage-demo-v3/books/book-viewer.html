@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book Viewer | SuperTeacher</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body data-root="../" data-active="curriculum">
+    <header id="site-header"></header>
+
+    <main class="page">
+      <div class="page-top">
+        <span>Book Demo Library / Selected Book</span>
+        <a class="back-link" href="javascript:history.back()">Back to grades</a>
+      </div>
+
+      <section class="book-layout">
+        <div class="cover-display">
+          <img
+            id="actual-cover-image"
+            class="actual-cover-image"
+            src=""
+            alt="Selected book cover"
+          />
+
+          <div id="book-cover" class="book-cover">
+            <div class="cover-brand">SuperTeacher</div>
+            <div id="cover-board" class="cover-board">Curriculum Series</div>
+            <div id="cover-title" class="cover-title">Book Series</div>
+            <div id="cover-grade" class="cover-grade">Grade 1</div>
+            <div class="cover-stamp">Creating Creators</div>
+          </div>
+        </div>
+
+        <div class="book-info">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>Interactive Book Preview
+          </div>
+          <h1 id="book-title">Book — Grade 1</h1>
+          <p id="book-description"></p>
+
+          <div class="tag-list">
+            <span class="tag">Grade-wise</span>
+            <span class="tag">Board aligned</span>
+            <span class="tag">Teacher resources</span>
+            <span class="tag">Digital support</span>
+          </div>
+
+          <div class="action-row">
+            <button
+              class="button blue"
+              type="button"
+              onclick="showToast('Connect the actual PDF link here.')"
+            >
+              Open Book Preview
+            </button>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/book-viewer.js"></script>
+  </body>
+</html>

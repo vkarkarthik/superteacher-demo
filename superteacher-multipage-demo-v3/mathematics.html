@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ProMaths | SuperTeacher</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body data-root="" data-active="curriculum" data-subject="mathematics">
+    <header id="site-header"></header>
+
+    <main class="page">
+      <div class="page-top">
+        <span>Curriculum / Grade-wise Books</span>
+        <a class="back-link" href="curriculum.html">Back to curriculum</a>
+      </div>
+      <section class="page-heading">
+        <div>
+          <div class="breadcrumb">Overview / Curriculum / Grade Selection</div>
+          <h1 id="page-title">Choose a Grade</h1>
+        </div>
+        <p id="page-description"></p>
+      </section>
+
+      <section id="grade-stage" class="grade-stage">
+        <div class="orbit-area">
+          <div class="grade-track"></div>
+          <button
+            id="grade-core"
+            class="grade-core"
+            type="button"
+            aria-expanded="false"
+            aria-controls="grade-ring"
+          >
+            <div id="grade-core-icon" class="grade-core-icon"></div>
+
+            <strong id="grade-core-title"> Series </strong>
+
+            <span id="grade-core-context" class="grade-core-context">
+              Curriculum Series
+            </span>
+
+            <small id="grade-core-action"> Click to view grades </small>
+          </button>
+          <div id="grade-ring" class="grade-ring"></div>
+        </div>
+        <div class="grade-instruction">
+          Select a grade to open the book preview
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+    <script src="js/catalog.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/subject-page.js"></script>
+  </body>
+</html>
