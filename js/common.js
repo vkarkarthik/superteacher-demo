@@ -11,7 +11,7 @@
       ["curriculum", "Curriculum", root + "curriculum.html"],
       ["kits", "Experiential Kits", root + "experiential-kits.html"],
       ["makerspace", "Makerspace", root + "makerspace.html"],
-      ["stemup", "STEM-UP", root + "stem-up.html"],
+      ["stepup", "STEP-UP", root + "step-up.html"],
     ];
 
     header.className = "site-header";
